@@ -5,12 +5,12 @@ import Body from "./Body";
 import "./Player.css";
 import Footer from "./Footer";
 
-function Player() {
+function Player({ spotify }) {
   return (
     <div className="player">
       <div className="player__body">
         <Sidebar />
-        <Body />
+        <Body spotify={spotify} />
       </div>
 
       <Footer />
